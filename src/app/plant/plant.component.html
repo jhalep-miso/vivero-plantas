@@ -1,3 +1,34 @@
-<p>
-  plant works!
-</p>
+<div class="container-fluid page">
+  <div class="page">
+    <h1>Vivero El Otoño</h1>
+    <hr>
+    <div class="col-12">
+      <img class="img-fluid" src="./assets/vivero.png" alt="vivero" />
+    </div>
+    <hr>
+    <div class="col-8">
+      <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th class="h4">#</th>
+            <th class="h4">Nombre común</th>
+            <th class="h4">Tipo</th>
+            <th class="h4">Clima</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let plant of plants">
+            <td><b>{{ plant.id }}</b></td>
+            <td>{{ plant.nombre_comun }}</td>
+            <td>{{ plant.tipo }}</td>
+            <td>{{ plant.clima }}</td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="footer">
+    <b>
+      Contact us: +57 3102105253 - info&#64;viveroelotonio.com - &#64;viveroelotonio
+    </b>
+  </div>
+</div>
